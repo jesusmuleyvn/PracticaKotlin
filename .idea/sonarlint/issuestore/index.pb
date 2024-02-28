@@ -94,3 +94,5 @@ P
 Q.idea/sonarlint/securityhotspotstore/f/4/f4058d12432156867e4fbce8461387d42350a91b,5\2\52df08176aa9e29afce8d84b33d0e6e8caa0b85f
 g
 7app/src/main/java/com/example/a/View/FragmentAdapter.kt,7\1\71d8525fe68774e9b952d8110dabe4fb6bc8bda9
+e
+5app/src/main/java/com/example/a/View/ListaFacturas.kt,8\6\862051596f4af07319b552fe78be9ba1c5867d4f

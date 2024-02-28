@@ -5,50 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:foregroundTint="#FDF6FE"
-    android:orientation="vertical"
+    android:orientation="horizontal"
+    android:gravity="center"
     tools:context=".View.MainActivity">
 
+    <Button
+        android:id="@+id/btnListaFacturas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lista_de_facturas"
+        android:layout_weight="1.0"/>
 
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnSmartSolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/smart_solar"
+        android:layout_weight="1.0"/>
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <Button
-                    android:id="@+id/btnConsumo"
-                    android:text="@string/consumo"
-                    style="@style/estilobtnConsumo"/>
-
-
-                <ImageButton
-                    android:id="@+id/btnFiltro"
-                    style="@style/estilobtnFiltro" />
-
-            </RelativeLayout>
-            <TextView
-                android:id="@+id/tvFacturas"
-                android:text="@string/facturas"
-                style="@style/estilotvToolbar"/>
-        </LinearLayout>
-    </androidx.appcompat.widget.Toolbar>
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/listaFacturas"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20sp"
-        />
 
 
 </LinearLayout>

@@ -15,6 +15,9 @@
         android:theme="@style/Theme.A"
         tools:targetApi="31">
         <activity
+            android:name=".View.ListaFacturas"
+            android:exported="false" />
+        <activity
             android:name=".View.SmartSolar"
             android:exported="false"
             android:label="@string/title_activity_smart_solar"
