@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="estilobtnCerrar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">@dimen/tam20</item>
+        <item name="android:layout_marginEnd">@dimen/tam20</item>
+        <item name="backgroundTint">@color/blanco_background</item>
+        <item name="android:src">@drawable/cerrar</item>
+    </style>
+
+    <style name="estilotvFiltrarFacturar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="paddingStart">@dimen/tam10</item>
+        <item name="android:textSize">@dimen/tam48</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="estilotvFechaEmision">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/tam10</item>
+        <item name="android:textSize">@dimen/tam20</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="estilotvDesde">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/tam20</item>
+    </style>
+
+
+    <style name="estilotvHasta">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/tam20</item>
+    </style>
+
+
+    <style name="estilotvPorImporte">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/tam10</item>
+        <item name="android:textSize">@dimen/tam20</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="estilotvCantidadSeleccionada">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+
+
+    <style name="estilotvEuros">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toEndOf">@id/tvCantidadSeleccionada</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+
+
+    <style name="estilotvPorFiltro">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/tam20</item>
+        <item name="android:layout_marginStart">@dimen/tam10</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="estiloCheckBoxesFiltros">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/tam20</item>
+        <item name="android:layout_marginStart">@dimen/tam8</item>
+    </style>
+
+
+
+
+
+    <style name="estilobtnAplicar" parent="ThemeOverlay.AppCompat">
+        <item name="backgroundTint">@color/verde</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/tam30</item>
+    </style>
+
+    <style name="estilobtnDesechar" parent="ThemeOverlay.AppCompat">
+        <item name="backgroundTint">@color/gris</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginEnd">@dimen/tam30</item>
+    </style>
+
+
+    <style name="estilobtnConsumo" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableLeft">@drawable/baseline_arrow_back_ios_new_24</item>
+        <item name="android:drawableTint">@color/verde</item>
+        <item name="android:textColor">@color/verde</item>
+    </style>
+
+    
+    
+    <style name="estilobtnFiltro">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="backgroundTint">@color/blanco_background</item>
+        <item name="paddingEnd">@dimen/tam20</item>
+        <item name="android:src">@drawable/filtro</item>
+    </style>
+
+
+    <style name="estilobtnAtras" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableLeft">@drawable/baseline_arrow_back_ios_new_24</item>
+        <item name="android:drawableTint">@color/verde</item>
+        <item name="android:textColor">@color/verde</item>
+    </style>
+
+    <style name="estilotvToolbar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/tam10</item>
+        <item name="android:textSize">@dimen/tam48</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="estilotvTitulo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/tam30</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="estilotvCuerpo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/tam18</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_below">@id/titulo</item>
+        <item name="android:layout_marginTop">@dimen/tam20</item>
+    </style>
+
+
+    <style name="estilobtnCerrarPopup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/cuerpo</item>
+        <item name="android:layout_marginTop">@dimen/tam20</item>
+    </style>
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:layout_marginLeft="20sp"
+    android:layout_marginTop="20sp"
+    android:gravity="center_vertical"
+    android:textColor="@android:color/black"
+
+    <style name="estilotvFechaFactura">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/tam20</item>
+        <item name="android:layout_marginLeft">@dimen/tam20</item>
+        <item name="android:layout_marginTop">@dimen/tam20</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+
+
+
+    <style name="estilotvPendientePago">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/rojo</item>
+        <item name="android:layout_marginLeft">@dimen/tam20</item>
+        <item name="android:layout_marginTop">@dimen/tam20</item>
+        <item name="android:layout_below">@id/Fecha</item>
+    </style>
+
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    tools:text="33,73€"
+    android:textColor="@color/black"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="20sp"
+    app:drawableRightCompat="@drawable/baseline_arrow_forward_ios_24"
+
+
+
+    <style name="estilotvMontoFactura">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/tam20</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginTop">@dimen/tam20</item>
+    </style>
+
+
+
+    <style name="estilotvDatosInstalacion">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/tam20</item>
+        <item name="android:textStyle">bold</item>
+        <item name="background">#FFFEFEFE</item>
+    </style>
+
+
+    <style name="estilotvAutoconsumo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/tam15</item>
+        <item name="android:textStyle">bold</item>
+        <item name="background">#FFFEFEFE</item>
+    </style>
+
+
+
+</resources>

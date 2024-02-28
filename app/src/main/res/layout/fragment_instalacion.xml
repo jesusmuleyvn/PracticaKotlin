@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".View.EnergiaFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvDatosInstalacion"
+        android:text="@string/infoFragmentEnergia"
+        style="@style/estilotvDatosInstalacion"/>
+
+    <TextView
+        android:id="@+id/tvAutoconsumo"
+        android:text="@string/autoconsumo"
+        style="@style/estilotvAutoconsumo"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFEFEFE"
+        android:src="@mipmap/grafico_round"/>
+
+</LinearLayout>
+
+</FrameLayout>

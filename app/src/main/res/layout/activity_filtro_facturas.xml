@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btnCerrar"
+                    style="@style/estilobtnCerrar" />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tvFiltrarFacturas"
+                style="@style/estilotvFiltrarFacturar"
+                android:text="@string/filtrar_facturas"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/tam20">
+
+        <TextView
+            android:id="@+id/tvFechaEmision"
+            android:text="@string/fecha_emision"
+            style = "@style/estilotvFechaEmision"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/tam10">
+                <TextView
+                    android:id= "@+id/tvDesde"
+                    style="@style/estilotvDesde"
+                    android:text="@string/desde">
+                </TextView>
+
+                <Button
+                    android:id="@+id/btnDesde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dia_mes_anho"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvHasta"
+                    style="@style/estilotvHasta"
+                    android:text="@string/hasta" />
+
+                <Button
+                    android:id="@+id/btnHasta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dia_mes_anho" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tvPorImporte"
+                style="@style/estilotvPorImporte"
+                android:text="@string/por_importe"/>
+
+            <TextView
+                android:id="@+id/tvCantidadSeleccionada"
+                style="@style/estilotvCantidadSeleccionada"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tvEuros"
+                style="@style/estilotvEuros"
+                android:text="@string/euro"/>
+        </RelativeLayout>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/selectorImporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0f"
+            android:valueTo="300f"
+            android:value="0f"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20sp">
+        <TextView
+            android:id="@+id/tvPorFiltros"
+            style="@style/estilotvPorFiltro"
+            android:text="@string/por_filtro"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="2sp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/cbFiltroPagadas"
+                    style="@style/estiloCheckBoxesFiltros"
+                    android:text="@string/filtro_pagadas"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/cbFiltroAnuladas"
+                    android:text="@string/filtro_anuladas"
+                    style="@style/estiloCheckBoxesFiltros"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/cbFiltroCuotaFija"
+                    android:text="@string/filtro_cuota_fija"
+                    style="@style/estiloCheckBoxesFiltros"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/cbFiltroPendientes"
+                    android:text="@string/filtro_pendientes"
+                    style="@style/estiloCheckBoxesFiltros"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/cbFiltroPlan"
+                    android:text="@string/filtro_plan_de_pago"
+                    style="@style/estiloCheckBoxesFiltros"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp">
+
+        <Button
+            android:id="@+id/btnAplicar"
+            android:text="@string/aplicar"
+            style="@style/estilobtnAplicar"/>
+
+        <Button
+            android:id="@+id/btnDesechar"
+            android:text="@string/eliminar_filtros"
+            style="@style/estilobtnDesechar"/>
+    </RelativeLayout>
+
+</LinearLayout>
