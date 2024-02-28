@@ -13,6 +13,15 @@ class SmartSolar : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySmartSolarBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.btnAtras.setOnClickListener({onBackPressedDispatcher.onBackPressed()})
+        binding.btnAtras.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
+
+        val fragmentAdapter = FragmentAdapter(supportFragmentManager)
+        fragmentAdapter.addFragment(instalacionFragment(), "Instalacion")
+        fragmentAdapter.addFragment(EnergiaFragment(), "Energia")
+        fragmentAdapter.addFragment(DetallesFragment(), "Detalles")
+
+        binding.viewPager.adapter = fragmentAdapter
+        binding.tabLayout.setupWithViewPager(binding.viewPager)
+
     }
 }

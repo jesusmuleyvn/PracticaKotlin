@@ -170,13 +170,7 @@
         <item name="android:layout_marginTop">@dimen/tam20</item>
     </style>
 
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="20sp"
-    android:layout_marginLeft="20sp"
-    android:layout_marginTop="20sp"
-    android:gravity="center_vertical"
-    android:textColor="@android:color/black"
+
 
     <style name="estilotvFechaFactura">
         <item name="android:layout_width">wrap_content</item>
@@ -202,14 +196,6 @@
     </style>
 
 
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="20sp"
-    tools:text="33,73€"
-    android:textColor="@color/black"
-    android:layout_alignParentEnd="true"
-    android:layout_marginTop="20sp"
-    app:drawableRightCompat="@drawable/baseline_arrow_forward_ios_24"
 
 
 
@@ -230,7 +216,7 @@
         <item name="android:textSize">@dimen/tam20</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAlignment">center</item>
-        <item name="background">#FFFEFEFE</item>
+        <item name="background">@color/blanco_background</item>
     </style>
 
 
@@ -239,7 +225,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/tam15</item>
         <item name="android:textStyle">bold</item>
-        <item name="background">#FFFEFEFE</item>
+        <item name="background">@color/blanco_background</item>
     </style>
 
 

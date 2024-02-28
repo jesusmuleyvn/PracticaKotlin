@@ -44,17 +44,23 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/mi_instalacion"/>
+            android:clickable="true"
+            android:text="@string/mi_instalacion"
+            android:focusable="true" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/energia"/>
+            android:clickable="true"
+            android:text="@string/energia"
+            android:focusable="true" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/detalles"/>
+            android:clickable="true"
+            android:text="@string/detalles"
+            android:focusable="true" />
         
     </com.google.android.material.tabs.TabLayout>
 
