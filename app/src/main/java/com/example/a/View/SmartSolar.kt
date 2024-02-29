@@ -22,9 +22,7 @@ class SmartSolar : AppCompatActivity() {
 
         binding.viewPager.adapter = fragmentAdapter
         binding.tabLayout.setupWithViewPager(binding.viewPager)
-        binding.btnAtras.setOnClickListener{
-            onBackPressedDispatcher.onBackPressed()
-        }
+
 
     }
 }

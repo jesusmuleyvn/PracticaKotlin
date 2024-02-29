@@ -23,7 +23,7 @@ tools:context=".View.EnergiaFragment">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFEFEFE"
+        android:background="@color/blanco_background"
         android:src="@mipmap/grafico_round"/>
 
 </LinearLayout>

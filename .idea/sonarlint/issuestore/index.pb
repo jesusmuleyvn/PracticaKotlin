@@ -96,3 +96,11 @@ g
 7app/src/main/java/com/example/a/View/FragmentAdapter.kt,7\1\71d8525fe68774e9b952d8110dabe4fb6bc8bda9
 e
 5app/src/main/java/com/example/a/View/ListaFacturas.kt,8\6\862051596f4af07319b552fe78be9ba1c5867d4f
+c
+3app/src/main/java/com/example/a/model/FacturaDao.kt,2\b\2b037de40c56b75e088f636eeb27d55da24a4af8
+b
+2app/src/main/java/com/example/a/model/FacturaDB.kt,f\c\fc8e28b8522bb361bf0e649986c7e37719448729
+c
+3app/src/main/java/com/example/a/model/FacturaApp.kt,3\2\325db257c600ecfc5c82d551849d5652280ef918
+]
+-app/src/main/java/com/example/a/FacturasVM.kt,9\f\9f9a07426eee60891ea5704762380858072a73a4
