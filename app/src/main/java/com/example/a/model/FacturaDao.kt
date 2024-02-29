@@ -10,14 +10,13 @@ import androidx.room.Query
 @Dao
 interface FacturaDao {
 
-    @Query("Select * from Factura")
-    suspend fun getAll(): List<Factura>
-
 
     @Query("SELECT * FROM Factura")
     fun getAllFacturas(): LiveData<List<Factura>>
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertFacturas(facturas: List<Factura>)
+
     @Query("DELETE FROM Factura")
     suspend fun eliminarBaseDeDatos()
 
