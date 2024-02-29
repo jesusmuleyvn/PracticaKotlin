@@ -18,10 +18,12 @@ interface FacturaDao {
     suspend fun insertFacturas(facturas: List<Factura>)
 
     @Query("DELETE FROM Factura")
-    suspend fun eliminarBaseDeDatos()
-
+    suspend fun eliminarContenidoBaseDeDatos()
 
     @Query("Select MAX(cantidad) FROM Factura")
     suspend fun getMayorImporte(): Float
+
+    @Query("SELECT * FROM Factura WHERE pendientePago IN (:filtros)")
+    fun filtrarFacturas(filtros: List<String>): List<Factura>
 
 }

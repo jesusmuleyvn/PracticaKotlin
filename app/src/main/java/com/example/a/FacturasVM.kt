@@ -2,7 +2,6 @@ package com.example.a
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
@@ -17,11 +16,30 @@ class FacturasVM(application: Application) : AndroidViewModel(application) {
     init {
         facturaDao = database.facturaDao()
     }
-    fun insertFacturasFromApi(facturas: List<Factura>) {
+
+
+
+
+    fun insertarFacturas(facturas: List<Factura>) {
         viewModelScope.launch {
             facturaDao.insertFacturas(facturas)
         }
     }
+
+    fun getFacturasPorFiltro(filtros: List<String>) : List<Factura>{
+        var listaFacturas : List<Factura> = ArrayList()
+        viewModelScope.launch {
+            listaFacturas = facturaDao.filtrarFacturas(filtros)
+        }
+        return listaFacturas
+    }
+
+    fun eliminarFacturasDeBD(){
+        viewModelScope.launch {
+            facturaDao.eliminarContenidoBaseDeDatos()
+        }
+    }
+
 
     fun getImporteMasAlto() : Float{
         var importeMax : Float = 0f

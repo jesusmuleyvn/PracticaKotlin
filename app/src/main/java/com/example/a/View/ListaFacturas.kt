@@ -5,7 +5,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.a.APIService
@@ -13,7 +12,6 @@ import com.example.a.FacturasVM
 import com.example.a.databinding.ActivityListaFacturasBinding
 import androidx.activity.viewModels
 import com.example.a.model.Factura
-import com.example.a.model.FacturaApp
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -38,7 +36,7 @@ class ListaFacturas : AppCompatActivity() {
         setUpRecyclerView()
         corrutinaFactura()
 
-        listaFacturas.addAll(listaFacturasInicial)
+
 
 
         binding.btnFiltro.setOnClickListener {
@@ -82,7 +80,8 @@ class ListaFacturas : AppCompatActivity() {
             runOnUiThread{
                 if (llamada.isSuccessful){
                     val factura = result?.facturas ?: emptyList()
-                    vm.insertFacturasFromApi(factura)
+                    vm.eliminarFacturasDeBD()
+                    vm.insertarFacturas(factura)
                     mAdapter.listaFacturas.addAll(factura)
                     mAdapter.notifyDataSetChanged()
                 }else{
