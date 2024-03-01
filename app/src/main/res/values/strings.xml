@@ -19,9 +19,8 @@
     <string name="pagadas">Pagadas</string>
     <string name="euro">\u20AC</string>
     <string name="informacion">Información</string>
-    <string name="no_disponible">Esta funcionalidad no está disponible</string>
+    <string name="no_disponible">Esta funcionalidad aún no está disponible</string>
     <string name="cerrar">Cerrar</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_smart_solar">SmartSolar</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>

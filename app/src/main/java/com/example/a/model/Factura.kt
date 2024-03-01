@@ -10,7 +10,7 @@ data class Factura(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
     @SerializedName("descEstado") val pendientePago: String,
-    @SerializedName("importeOrdenacion") val cantidad: Double,
+    @SerializedName("importeOrdenacion") val cantidad: Float,
     @SerializedName("fecha") val fecha: String
 
 )

@@ -27,6 +27,8 @@ class ListaFacturas : AppCompatActivity() {
     val mAdapter: RecyclerAdapter = RecyclerAdapter()
     val URL_BASE = "https://viewnextandroid3.wiremockapi.cloud/"
 
+    var maxValor : Float = 0f
+
 
     private lateinit var binding: ActivityListaFacturasBinding
     val vm :FacturasVM by viewModels{FacturasVM.FacturasVMFactory(application)}
@@ -38,11 +40,11 @@ class ListaFacturas : AppCompatActivity() {
         setUpRecyclerView()
         corrutinaFactura()
 
-        val retromock : Retromock = Retromock.Builder().retrofit(getRetrofit()).defaultBodyFactory(ResourceBodyFactory()).build()
-
 
         binding.btnFiltro.setOnClickListener {
             val intent = Intent(this, FiltroFacturas::class.java)
+            maxValor = vm.getImporteMasAlto()
+            intent.putExtra("maxValor", maxValor)
             startActivity(intent)
         }
 

@@ -7,7 +7,8 @@
     android:foregroundTint="@color/blanco_background"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".View.MainActivity">
+    tools:context=".View.MainActivity"
+    android:background="@color/white">
 
     <Button
         android:id="@+id/btnListaFacturas"

@@ -13,6 +13,10 @@ import kotlinx.coroutines.launch
 class FacturasVM(application: Application) : AndroidViewModel(application) {
     private val facturaDao: FacturaDao
     private val database: FacturaDB by lazy{FacturaDB.getDatabase(application)}
+
+
+    private var importeMax : Float = 100f
+    private lateinit var listaFiltrada : List<Factura>
     init {
         facturaDao = database.facturaDao()
     }
@@ -27,11 +31,12 @@ class FacturasVM(application: Application) : AndroidViewModel(application) {
     }
 
     fun getFacturasPorFiltro(filtros: List<String>) : List<Factura>{
-        var listaFacturas : List<Factura> = ArrayList()
         viewModelScope.launch {
-            listaFacturas = facturaDao.filtrarFacturas(filtros)
+            with(this){
+                listaFiltrada = facturaDao.filtrarFacturas(filtros)
+            }
         }
-        return listaFacturas
+        return listaFiltrada
     }
 
     fun eliminarFacturasDeBD(){
@@ -42,9 +47,10 @@ class FacturasVM(application: Application) : AndroidViewModel(application) {
 
 
     fun getImporteMasAlto() : Float{
-        var importeMax : Float = 0f
         viewModelScope.launch {
-            importeMax = facturaDao.getMayorImporte()
+            with(this){
+                importeMax = facturaDao.getMayorImporte()
+            }
         }
         return importeMax
     }

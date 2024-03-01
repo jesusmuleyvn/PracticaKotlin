@@ -1,6 +1,7 @@
 package com.example.a.View
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -53,6 +54,11 @@ class FiltroFacturas : AppCompatActivity() {
             binding.tvCantidadSeleccionada.text = String.format("%.2f",  value)
         }
 
+        cantidadMaxima = intent.getFloatExtra("maxValor", 33f)
+        binding.selectorImporte.valueTo = cantidadMaxima
+        binding.selectorImporte.valueFrom = 0f
+
+
     }
 
     private fun eliminarFiltros() {
@@ -60,12 +66,18 @@ class FiltroFacturas : AppCompatActivity() {
         filtrosActivados.clear()
         binding.selectorImporte.value = 0f
         fechasUsadas = 0
-        binding.tvDesde.text = "values/strings"
+        binding.btnDesde.text = getString(R.string.dia_mes_anho)
+        binding.btnHasta.text = getString(R.string.dia_mes_anho)
 
     }
 
     private fun aplicarFiltros() {
-        Toast.makeText(this, "Funcionalidad aún no implementada", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, "Funcionalidad aún no implementada", Toast.LENGTH_SHORT).show()
+        var filtrosString : MutableList<String> = ArrayList()
+        filtrosActivados.forEach{filtrosString.add(it.text.toString())}
+        var intent : Intent = Intent(this,ListaFacturas::class.java)
+        intent.putStringArrayListExtra("filtros", filtrosString as ArrayList<String>)
+        startActivity(intent)
     }
 
     private fun actualizarListaFiltros(boton: CheckBox) {
@@ -74,8 +86,6 @@ class FiltroFacturas : AppCompatActivity() {
         }else{
             filtrosActivados.remove(boton)
         }
-
-
     }
 
     private fun mostrarCalendario(boton: Button, anyo: Int, mes: Int, dia: Int, modo: String) {
@@ -86,10 +96,20 @@ class FiltroFacturas : AppCompatActivity() {
                     this.anyoDesde = a
                     this.mesDesde = m + 1
                     this.diaDesde = d
+                    if(this.fechasUsadas == 2 || this.fechasUsadas == 3){
+                        this.fechasUsadas = 3
+                    }else{
+                        this.fechasUsadas = 1
+                    }
                 }else{
                     this.anyoHasta = a
                     this.mesHasta = m + 1
                     this.diaHasta= a
+                    if(this.fechasUsadas == 1 || this.fechasUsadas == 3){
+                        this.fechasUsadas = 3
+                    }else{
+                        this.fechasUsadas = 2
+                    }
                 }
                 boton.text =
                     "" + d + "/" + (m.toInt() + 1).toString() + "/" + a

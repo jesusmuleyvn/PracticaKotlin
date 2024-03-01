@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.instalacionFragment">
+    tools:context=".View.instalacionFragment"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,19 +13,24 @@
         android:weightSum="4">
 
 
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_weight="1"/>
+
+
         <ImageView
             android:id="@+id/imagenPlanGestiones"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
             android:src="@mipmap/plan_gestiones"
-            android:layout_weight="3"/>
+            android:layout_weight="2"/>
 
         <TextView
             android:id="@+id/tvDatosInstalacion"
             style="@style/estilotvDatosInstalacion"
             android:layout_width="300dp"
-            android:layout_weight="1"
+            android:layout_weight="0"
             android:layout_gravity="center"
             android:text="@string/smart_solar_energia"/>
 

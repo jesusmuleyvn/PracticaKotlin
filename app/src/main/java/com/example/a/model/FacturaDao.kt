@@ -20,7 +20,7 @@ interface FacturaDao {
     @Query("DELETE FROM Factura")
     suspend fun eliminarContenidoBaseDeDatos()
 
-    @Query("Select MAX(cantidad) FROM Factura")
+    @Query("SELECT MAX(cantidad) FROM Factura")
     suspend fun getMayorImporte(): Float
 
     @Query("SELECT * FROM Factura WHERE pendientePago IN (:filtros)")

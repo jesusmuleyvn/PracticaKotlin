@@ -7,7 +7,7 @@
         <item name="android:layout_centerInParent">true</item>
         <item name="android:layout_marginTop">@dimen/tam20</item>
         <item name="android:layout_marginEnd">@dimen/tam20</item>
-        <item name="backgroundTint">@color/blanco_background</item>
+        <item name="backgroundTint">@color/white</item>
         <item name="android:src">@drawable/cerrar</item>
     </style>
 
@@ -94,8 +94,6 @@
     <style name="estiloSelectorImporte">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:valueFrom">0f</item>
-        <item name="android:valueTo">300f</item>
         <item name="trackColorActive">@color/verde</item>
         <item name="labelBehavior">gone</item>
         <item name="thumbColor">@color/verde</item>
@@ -134,7 +132,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentEnd">true</item>
         <item name="android:layout_centerInParent">true</item>
-        <item name="backgroundTint">@color/blanco_background</item>
+        <item name="backgroundTint">@color/white</item>
         <item name="paddingEnd">@dimen/tam20</item>
         <item name="android:src">@drawable/filtro</item>
     </style>
@@ -176,10 +174,12 @@
 
 
     <style name="estilobtnCerrarPopup">
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_below">@id/cuerpo</item>
         <item name="android:layout_marginTop">@dimen/tam20</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="backgroundTint">@color/verde</item>
     </style>
 
 
@@ -218,6 +218,7 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:layout_alignParentEnd">true</item>
         <item name="android:layout_marginTop">@dimen/tam20</item>
+        <item name="android:layout_centerInParent">true</item>
     </style>
 
 
@@ -228,7 +229,7 @@
         <item name="android:textSize">@dimen/tam20</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAlignment">center</item>
-        <item name="background">@color/blanco_background</item>
+        <item name="background">@color/white</item>
     </style>
 
 
@@ -237,7 +238,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/tam15</item>
         <item name="android:textStyle">bold</item>
-        <item name="background">@color/blanco_background</item>
+        <item name="background">@color/white</item>
     </style>
 
 
