@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:foregroundTint="#FDF6FE"
-    android:orientation="horizontal"
+    android:foregroundTint="@color/blanco_background"
+    android:orientation="vertical"
     android:gravity="center"
     tools:context=".View.MainActivity">
 
@@ -13,16 +13,14 @@
         android:id="@+id/btnListaFacturas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/lista_de_facturas"
-        android:layout_weight="1.0"/>
+        android:backgroundTint="@color/verde"
+        android:text="@string/lista_de_facturas"/>
 
     <Button
         android:id="@+id/btnSmartSolar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/smart_solar"
-        android:layout_weight="1.0"/>
-
-
+        android:backgroundTint="@color/verde"
+        android:text="@string/smart_solar"/>
 
 </LinearLayout>

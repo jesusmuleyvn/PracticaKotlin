@@ -65,6 +65,7 @@
                     android:id="@+id/btnDesde"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/verde"
                     android:text="@string/dia_mes_anho"/>
 
 
@@ -85,6 +86,7 @@
                     android:id="@+id/btnHasta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/verde"
                     android:text="@string/dia_mes_anho" />
             </LinearLayout>
 
@@ -130,11 +132,7 @@
 
         <com.google.android.material.slider.Slider
             android:id="@+id/selectorImporte"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:valueFrom="0f"
-            android:valueTo="300f"
-            android:value="0f"/>
+            style="@style/estiloSelectorImporte"/>
     </LinearLayout>
 
 

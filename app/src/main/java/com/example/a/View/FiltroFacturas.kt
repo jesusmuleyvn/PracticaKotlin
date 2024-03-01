@@ -60,11 +60,12 @@ class FiltroFacturas : AppCompatActivity() {
         filtrosActivados.clear()
         binding.selectorImporte.value = 0f
         fechasUsadas = 0
+        binding.tvDesde.text = "values/strings"
 
     }
 
     private fun aplicarFiltros() {
-        Toast.makeText(this, anyoDesde.toString(), Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Funcionalidad aún no implementada", Toast.LENGTH_SHORT).show()
     }
 
     private fun actualizarListaFiltros(boton: CheckBox) {

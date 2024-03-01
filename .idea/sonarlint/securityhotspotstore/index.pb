@@ -104,3 +104,9 @@ c
 3app/src/main/java/com/example/a/model/FacturaApp.kt,3\2\325db257c600ecfc5c82d551849d5652280ef918
 ]
 -app/src/main/java/com/example/a/FacturasVM.kt,9\f\9f9a07426eee60891ea5704762380858072a73a4
+A
+app/Facturas.json,8\c\8c6d0b265bbb955f59d977b79f50815c99992bc4
+p
+@app/src/main/java/com/example/a/retromock/ResourceBodyFactory.kt,5\d\5d941c1c08ba4b10b7359675242c3796023a4d55
+h
+8app/src/main/java/com/example/a/View/RetromockService.kt,0\d\0d29ca2739ec73b1387e0c819dda4b57280b5c7a

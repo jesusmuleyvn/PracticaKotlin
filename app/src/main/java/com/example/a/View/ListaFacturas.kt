@@ -11,7 +11,9 @@ import com.example.a.APIService
 import com.example.a.FacturasVM
 import com.example.a.databinding.ActivityListaFacturasBinding
 import androidx.activity.viewModels
+import co.infinum.retromock.Retromock
 import com.example.a.model.Factura
+import com.example.a.retromock.ResourceBodyFactory
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -36,7 +38,7 @@ class ListaFacturas : AppCompatActivity() {
         setUpRecyclerView()
         corrutinaFactura()
 
-
+        val retromock : Retromock = Retromock.Builder().retrofit(getRetrofit()).defaultBodyFactory(ResourceBodyFactory()).build()
 
 
         binding.btnFiltro.setOnClickListener {

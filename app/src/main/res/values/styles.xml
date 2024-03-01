@@ -85,9 +85,21 @@
         <item name="android:layout_centerVertical">true</item>
         <item name="android:textSize">@dimen/tam20</item>
         <item name="android:layout_marginStart">@dimen/tam8</item>
+        <item name="buttonTint">@color/verde</item>
     </style>
 
 
+
+
+    <style name="estiloSelectorImporte">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:valueFrom">0f</item>
+        <item name="android:valueTo">300f</item>
+        <item name="trackColorActive">@color/verde</item>
+        <item name="labelBehavior">gone</item>
+        <item name="thumbColor">@color/verde</item>
+    </style>
 
 
 
